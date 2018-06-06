@@ -25,6 +25,7 @@ class Example extends Component {
   }
 
   async componentWillMount() {
+    if (this.props.posts.length > 0) return;
     this.setState({ onPending: true });
     try {
       await this.props.getPosts({
