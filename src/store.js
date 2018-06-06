@@ -1,6 +1,10 @@
+/* external */
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
+/* internal */
+// common
+import { ExampleReducer } from 'container/common/Example/Example.reducer';
 
 const middleWares = [thunk];
 const composeEnhancers =
@@ -13,7 +17,7 @@ let store = null;
 
 export default (initialStore = {}) => {
   const combindedReducer = combineReducers({
-
+    example: ExampleReducer,
   });
   store = createStore(
     combindedReducer,

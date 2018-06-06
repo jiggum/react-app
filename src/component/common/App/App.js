@@ -1,11 +1,12 @@
 /* external */
 import React, { PureComponent } from 'react';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 /* internal */
-import RouteSample from 'component/common/RouteSample/RouteSample';
+import Navigation from 'component/common/Navigation/Navigation';
+import Example from 'container/common/Example/Example';
 
 /* asset */
-import logo from 'asset/common/logo.svg';
 
 /* feature */
 import './App.css';
@@ -13,16 +14,12 @@ import './App.css';
 class App extends PureComponent {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <RouteSample />
-      </div>
+      <Router>
+        <div className="App">
+          <Navigation />
+          <Route path="/example" component={Example} />
+        </div>
+      </Router>
     );
   }
 }

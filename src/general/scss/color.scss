@@ -1,0 +1,28 @@
+$color-brand: #333333;
+$color-red: red;
+$color-green: green;
+
+$color-warn: $color-red;
+$color-highlight: $color-green;
+
+$text-color-0: #000;
+$text-color-1: #333;
+$text-color-2: #666;
+$text-color-3: #999;
+$text-color-4: #aaa;
+$text-color-5: #ccc;
+$text-color-6: #fff;
+
+$text-color-brand: $color-brand;
+
+$text-color-disabled: $text-color-5;
+$text-color-warn: $color-warn;
+$text-color-highlight: $color-highlight;
+
+$background-color-brand: $color-brand;
+$background-color-brand-active: $color-brand;
+$background-color-clear: #ffffff;
+$background-color-disabled: #e5e5e5;
+$background-color-highlight: $color-highlight;
+
+

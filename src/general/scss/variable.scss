@@ -1,0 +1,13 @@
+@import 'general/scss/color.scss';
+
+$side-padding-thin: 8px;
+$side-padding: 12px;
+$side-padding-thick: 16px;
+$border-default: 1px solid #ffffff;
+
+.color-warn {
+  color: $text-color-warn;
+}
+.color-highlight {
+  color: $text-color-highlight;
+}
