@@ -1,9 +1,16 @@
-import React, { Component } from 'react';
-import logo from '../../../asset/common/logo.svg';
-import RouteSample from '../RouteSample/RouteSample';
+/* external */
+import React, { PureComponent } from 'react';
+
+/* internal */
+import RouteSample from 'component/common/RouteSample/RouteSample';
+
+/* asset */
+import logo from 'asset/common/logo.svg';
+
+/* feature */
 import './App.css';
 
-class App extends Component {
+class App extends PureComponent {
   render() {
     return (
       <div className="App">
