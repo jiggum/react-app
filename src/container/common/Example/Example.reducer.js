@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { handleActions } from 'general/util/redux';
 
 /* feature */
-import { exampleActionTypes } from './Example.action';
+import { ExampleActionTypes } from './Example.action';
 
 export const ExamplePropTypes = {
   post: PropTypes.shape({
@@ -31,5 +31,5 @@ function upsertPosts(state, action) {
 }
 
 export const ExampleReducer = handleActions({
-  [exampleActionTypes.UPSERT_POSTS__EXAMPLE]: upsertPosts,
+  [ExampleActionTypes.UPSERT_POSTS__EXAMPLE]: upsertPosts,
 }, initialState);

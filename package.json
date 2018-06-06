@@ -52,6 +52,8 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "precommit": "./script/hook/precommit.sh",
-    "prepush": "yarn test-ci"
+    "prepush": "yarn test-ci",
+    "generateAction": "python script/util/generate-action.py",
+    "generateContainer": "python script/util/generate-container.py"
   }
 }
